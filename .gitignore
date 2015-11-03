@@ -1,0 +1,5 @@
+.vs/
+*.user
+Package/
+artifacts/
+src/SaleaeUtility/bin/
