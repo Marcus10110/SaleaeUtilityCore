@@ -8,7 +8,7 @@ namespace Saleae
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
 			//input file, output file.
 			string input_file;
@@ -49,7 +49,7 @@ namespace Saleae
 				{
 					value = Convert.ToInt32( hex_string.Substring( 2 ), 16 );
 				}
-				catch( Exception ex )
+				catch( Exception /* ex */ )
 				{
 					Console.WriteLine( "error: parse failure on row " + row );
 					Console.WriteLine( "unknown value: " + hex_string );
@@ -73,7 +73,7 @@ namespace Saleae
 
 		}
 
-		private bool ParseParameters( String[] parameters, out string input_file, out string output_file )
+		private static bool ParseParameters( String[] parameters, out string input_file, out string output_file )
 		{
 			input_file = null;
 			output_file = null;
@@ -81,7 +81,8 @@ namespace Saleae
 			//--help -help /help /? -?
 
 			string general_help_str = "Saleae Serial Export txt to bin converter\n";
-			general_help_str += "usage: thing.exe input_file output_file\n";
+			general_help_str += "usage: SaleaeUtility.exe [input_file] [output_file]\n";
+			general_help_str += "dotnet usage: dotnet run -- [input_file] [output_file]\n";
 
 			var help_parameters = new string[] { "--help", "-help", "-h", "/?", "/help", "-?" };
 
