@@ -68,6 +68,7 @@ namespace Saleae
 
 			}
 
+			writer.Close();
 
 			Console.WriteLine( "Finished! " + row + " rows written" );
 
