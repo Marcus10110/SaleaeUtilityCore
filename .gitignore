@@ -1,5 +1,6 @@
-.vs/
+.vscode/
 *.user
 Package/
 artifacts/
-src/SaleaeUtility/bin/
+obj/
+bin/

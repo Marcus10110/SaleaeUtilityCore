@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "SaleaeUtility": {
-      "commandName": "SaleaeUtility",
-      "commandLineArgs": "\"C:\\Users\\Mark\\Desktop\\serial hex.txt\" \"C:\\Users\\Mark\\Desktop\\serial.bin\""
-    }
-  }
-}
